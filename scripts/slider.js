@@ -23,7 +23,7 @@ function getPrevious(){
     }else {
         idx = idx -1;
     }
-    imagem.setAttribute('src', "./images-thresh/" + imagens[idx]);
+    imagem.setAttribute('src', "./images/images-thresh/" + imagens[idx]);
 
 }
 
