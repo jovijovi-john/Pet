@@ -1,0 +1,120 @@
+
+
+main{
+    width: 95vw;
+    margin: auto;
+    padding: 2rem 2rem;
+
+}
+
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #0082b9;
+}
+
+main h2, main h4 {
+    color:#050b3fe1;
+}
+
+main h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main h4 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.sobre-texto{
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color:rgba(0, 0, 0, 0.164);
+}
+
+main .sobre-texto p {
+    text-indent: 3rem;
+    padding: 0.5rem;
+    font-family: "Nunito Sans";
+    font-size: 1.06rem;
+}
+
+
+section.galeria {
+    padding: 2rem 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 2rem;
+}
+
+section.galeria .container-imagem {
+    text-align: center;
+    width: 90%;
+    min-height: 220px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    
+}
+
+section.galeria .container-imagem img {
+    min-height: 220px;    
+    width: 100%;
+    height: 100%;
+
+}
+
+@media(max-width: 768px){
+    main h2{
+        font-size: 3rem;
+    }
+
+    main h4{
+        font-size: 1.3rem;
+    }
+    main .container {
+        padding-bottom: 1rem;
+    }
+}
+
+@media(max-width: 500px){
+
+    main h2{
+        font-size: 2.5rem;
+    }
+
+    main h4{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 428px){
+    main .container h2{
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid #01B3FD;
+    }
+
+    h2.hist-pet {
+        padding: 1.4rem 0;
+        margin-bottom: 0rem;
+    }
+
+    main .container {
+        display: block;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0.7rem;
+    }
+
+    main h4 {
+        text-align: start;
+    }
+}

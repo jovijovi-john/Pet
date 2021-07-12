@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #263238;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62,5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* -------------------------------
+    CONFIGURAÇÕES DE CABEÇALHO 
+---------------------------------*/
+
+header {
+    width: 100%;
+    padding:0 0.7rem;
+    background-color: #FFFFFF;
+    box-shadow:  0.1rem 0 0.9rem #01b1fd69;
+    /* boxshadow: 0.2rem solid #01B3FD; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    padding: 0.3rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo .texto-logo {
+    color: black;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.1rem;
+}
+
+.logo .texto-logo .pet {
+    font-size: 2rem;
+    color: #01B3FD;
+    margin-top: 0;
+}
+
+.logo .texto-logo .comp {
+    padding: 0;
+    background-color: #01B3FD;
+    color: #050B3F;
+    font-size: 2rem;
+    text-indent: 1rem;
+}
+
+.logo img {
+    width: 7rem;
+}
+
+header .menu-toggle i {
+    font-size: 2.4rem;
+    margin-right: 5rem;
+    color:#000a5f;
+    display:none;
+}
+
+header nav ul {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0.75rem;
+    margin: 0.3rem; 
+}
+
+header nav ul li a{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #050B3F;
+    transition: background-color 0.4s ease;
+}
+
+header nav ul li a:hover{
+    color: #01B3FD;
+    background:#050b3fe1;
+}
+
+/* -------------------------------
+    CONFIGURAÇÕES DO FOOTER
+---------------------------------*/
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
+    padding: 3.125rem 0px 1.25rem 0px;
+    background-color: #000;
+    color: rgb(138, 138, 138);
+}
+
+footer .projetos-footer{
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .projetos-footer .titulo-projetos{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+
+footer .projetos-footer .titulo-projetos ul{
+    list-style: none;
+    padding: 0 0.2rem 0 1rem;
+}
+
+footer .projetos-footer .titulo-projetos ul li a{
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Nunito Sans";
+}
+
+footer .projetos-footer .titulo-projetos ul li a:hover{
+    color: #01B3FD;
+}
+
+footer h4{
+    text-align: center;
+    color: white;
+    background:#000a5f;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+footer .logos-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+footer img.logo-ufma{
+    margin-right: 1rem;
+}
+
+footer img.logo-pet{
+    width: 110px;
+    height: 100px;
+}
+
+footer .redes-sociais-footer{
+    
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes-sociais{
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}    
+
+#redes-sociais li {
+    margin: 0 1rem;
+}
+
+#redes-sociais li a i {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+#redes-sociais li a i:hover {
+    color: #01B3FD;
+}
+
+@media (max-width: 992px){
+    
+    footer {
+        display: block;
+        padding: 2rem 8rem;
+    }
+
+    footer .projetos-footer {
+        display: block;
+    }
+
+    footer h4{
+        color: #919496;
+        text-align: start;
+        background: none;
+        padding-top: 1rem;
+        text-indent: 2px;
+        margin-top: 1rem;
+        border-top: 1px solid #919496;
+    }
+
+    footer .redes-sociais-footer {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        border-top: 1px solid #919496;
+    }
+    
+}
+
+
+@media  (max-width: 997px){
+    nav {
+        display: none;
+    }
+
+    header .menu-toggle i{
+        display: block;
+        transition: color 0.4s ease;
+        cursor: pointer;
+    }
+
+    header .menu-toggle i:hover{
+        color: #01B3FD;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(10deg, rgb(0, 35, 44), #000a5f);
+        width: 100vw;
+        height: 100vh;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 19px;
+        top: 34px;
+    }
+
+    .menu-section.on .menu-toggle #toggle-button {
+        color: #fff;
+    }
+
+    .menu-section.on .menu-toggle #toggle-button:hover {
+        color: #01B3FD;
+    }
+
+    .menu-section.on nav{
+        display: flex;
+        align-items: center;
+        justify-content: center
+        
+    }
+
+
+    .menu-section.on nav ul{
+        margin-right: 0;
+        text-align: center;
+        display: block;
+    }
+
+
+    
+  .menu-section.on nav ul a{
+    transition-duration: 0.5s;
+    font-size: 2rem;
+    line-height: 4rem;
+    display: block;
+  }
+  
+  header nav ul li a {
+      color: #fff;
+  }
+  
+  header nav ul li a:hover{
+      background: none;
+  }
+   
+}
+
+@media (min-width: 691px) and (max-width: 767.98px){
+
+    .logo {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+       
+    header .menu-toggle i {
+        margin-right: 2rem;
+    }
+
+}
+
+@media (max-width: 690px){
+
+    .logo {
+        margin-left: 0;
+    }
+
+
+    #h2-main {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    header .menu-toggle i {
+        margin-right: 3rem;
+    }
+
+}

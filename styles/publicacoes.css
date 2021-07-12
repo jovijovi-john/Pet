@@ -1,0 +1,75 @@
+main{
+    width: 95vw;
+    margin: auto;
+    padding: 2rem 2rem;
+
+}
+
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#cont {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#cont h2{
+    font-family: Bebas Neue;
+    font-weight: bold;
+    color: #000a5f;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: #000a5f 0.325rem solid;
+}
+
+.publicacao {
+    background: white;
+    width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid rgba(105, 105, 105, 0.616);
+}
+
+.titulo-publicacao {
+    display: block;
+    font-size: 1.3rem;
+    background-color: #000a5f;
+    color: rgba(255, 255, 255, 0.925);
+    min-height: 30%;
+    padding: 2rem;
+}
+
+
+a.link-publicaco{ 
+    color: #fff;
+    border-radius: 0.5rem;
+    display: block;
+    width: 6rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    background-color: #000a5f;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+a.link-publicaco:hover {
+    background-color:#01B3FD;
+}
+
+.span-autores{
+    display: block;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.autores-publicaco{
+    padding: 1rem 2rem;
+}
